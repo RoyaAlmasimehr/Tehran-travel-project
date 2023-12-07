@@ -18,7 +18,7 @@ body {
 }
 
 .img-responsive {
-  max-width: 100%;
+  width: 100%;
   display: block;
 }
 
@@ -42,11 +42,11 @@ body {
 .card-body {
   padding: 30px;
 }
-.card-header img{
-  height: 250px;
-    width: 100%;
+.card-header.grid{
+grid-gap:0;
 
 }
+
 
 .card-footer {
   padding: 0 30px 30px;
@@ -171,14 +171,19 @@ main p {
   opacity: 0.7;
 }
 
+.embed{
+    width: 100%;
+    aspect-ratio: 1/1;
+
+}
 footer {
   color: white;
   background-image: linear-gradient(
       rgba(39, 32, 68, 0.9),
       rgba(39, 32, 68, 0.9)
     ),
-    url("../images/lisbon-footer.png");
-
+    url("../images/footer.png");
+background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -235,5 +240,12 @@ footer a {
 
   section {
     padding: 30px;
+  }
+  .card-header img{
+    display: none;
+  }
+
+  .embed{
+    aspect-ratio: 16/9;
   }
 }
